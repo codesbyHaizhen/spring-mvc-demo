@@ -13,5 +13,10 @@ Hello World of Spring
 <br><br>
 
 Student name: ${param.studentName}
+
+<br><br>
+<!-- read attribute from the model -->
+The message: ${message}
+
 </body>
 </html>
