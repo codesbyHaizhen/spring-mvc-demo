@@ -8,6 +8,7 @@ public class Student {
 	private String lastName;
 	private String country;
 	private HashMap<String,String> countryOptions;
+	private String favoriteLanguage;
 	
 	
 
@@ -43,5 +44,15 @@ public class Student {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
+	}
+	
+	
 	
 }
