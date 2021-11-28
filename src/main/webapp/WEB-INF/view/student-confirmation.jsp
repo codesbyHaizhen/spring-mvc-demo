@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -13,6 +14,13 @@ The student is confirmed: ${student.firstName} ${student.lastName}
 Country is: ${student.country}
 <br><br>
 Favorite Language is: ${student.favoriteLanguage}
+<br><br>
+Operating Systems:
+<ul>
+	<c:forEach var="temp" items="${student.operatingSystems}">
+		<li>${temp}</li>
+	</c:forEach>
+</ul>
 
 </body>
 </html>
